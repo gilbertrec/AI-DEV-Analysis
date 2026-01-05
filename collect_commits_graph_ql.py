@@ -35,8 +35,8 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Tuple, Dict
 
-
-PHRASE_RE = re.compile(r"generated", re.IGNORECASE)
+#deprecated: there are other ways to say generated, so just use "generated" alone, also copilot act as an author of commits.
+#PHRASE_RE = re.compile(r"generated", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -133,12 +133,12 @@ def gh_get_json(s: requests.Session, url: str) -> dict:
     raise RuntimeError(f"Empty response for {url}")
 
 
-def pr_contains_phrase(pr_body: Optional[str]) -> bool:
-    return bool(pr_body) and bool(PHRASE_RE.search(pr_body))
+#def pr_contains_phrase(pr_body: Optional[str]) -> bool:
+#    return bool(pr_body) and bool(PHRASE_RE.search(pr_body))
 
 
-def commit_message_contains_phrase(commit_message: str) -> bool:
-    return bool(PHRASE_RE.search(commit_message or ""))
+#def commit_message_contains_phrase(commit_message: str) -> bool:
+#    return bool(PHRASE_RE.search(commit_message or ""))
 
 
 def collect_for_pr(s: requests.Session, pr: PRRef, sha_cache: Dict[str, dict], max_workers: int = 8) -> List[dict]:
@@ -154,8 +154,8 @@ def collect_for_pr(s: requests.Session, pr: PRRef, sha_cache: Dict[str, dict], m
         author = (commit_obj.get("author") or {}).get("name") or ""
         author_date = (commit_obj.get("author") or {}).get("date") or ""
 
-        if not commit_message_contains_phrase(message):
-            continue
+        #if not commit_message_contains_phrase(message):
+        #    continue
 
         matched.append(
             {
@@ -330,7 +330,7 @@ def main() -> int:
     cache_path = "generated_by_commit_files_cache.json"
     sha_cache = load_json(cache_path, default={})
 
-    input_csv = "AIDev_all_pull_request.csv"
+    input_csv = "AIDev_all_pull_request_sampled.csv"
     input_column = "html_url"
     #read token from txt file:
     token = None
