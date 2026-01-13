@@ -327,20 +327,20 @@ def read_pr_urls_from_csv(path: str, col: str) -> List[str]:
 def main() -> int:
 
     ap = argparse.ArgumentParser()
-    cache_path = "generated_by_commit_files_cache.json"
+    cache_path = "cache/generated_by_commit_files_cache.json"
     sha_cache = load_json(cache_path, default={})
 
-    input_csv = "AIDev_all_pull_request_sampled.csv"
+    input_csv = "input/AIDev_all_pull_request_sampled.csv"
     input_column = "html_url"
     #read token from txt file:
     token = None
-    token_path = "git-token.txt"
+    token_path = "../git-token.txt"
     if os.path.exists(token_path):
         with open(token_path, "r", encoding="utf-8") as tf:
             token = tf.read().strip()
 
-    ap.add_argument("--out", help="Output CSV path (appended incrementally)", default="generated_by_commits.csv")
-    ap.add_argument("--state", help="State JSON path for checkpoint/resume", default="generated_by_commits_state.json")
+    ap.add_argument("--out", help="Output CSV path (appended incrementally)", default="output/generated_by_commits.csv")
+    ap.add_argument("--state", help="State JSON path for checkpoint/resume", default="cache/generated_by_commits_state.json")
     ap.add_argument("--resume", action="store_true", help="Resume from --state and keep appending to --out")
 
     args = ap.parse_args()
