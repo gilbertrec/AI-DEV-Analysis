@@ -1,2 +1,3 @@
 .repos/*
 .venv/*
+.analysis_of_datasets/Copilot/cache/*
