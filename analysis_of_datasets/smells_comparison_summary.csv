@@ -1,0 +1,116 @@
+Agent,Smell Type,Smell Name,Count Only Before,Count Only After,Count Persisted
+Claude_Code,design,Broken hierarchy,7,6,27
+Claude_Code,design,Broken modularization,2,2,24
+Claude_Code,design,Deficient encapsulation,15,82,1188
+Claude_Code,design,Feature envy,10,48,339
+Claude_Code,design,Insufficient modularization,0,5,72
+Claude_Code,design,Multifaceted abstraction,12,83,477
+Claude_Code,design,Rebellious hierarchy,0,4,141
+Claude_Code,design,Wide hierarchy,0,2,19
+Claude_Code,implementation,Complex conditional,1,2,11
+Claude_Code,implementation,Complex method,12,62,589
+Claude_Code,implementation,Empty catch block,0,29,101
+Claude_Code,implementation,Long identifier,58,235,1559
+Claude_Code,implementation,Long lambda function,0,1,35
+Claude_Code,implementation,Long message chain,0,0,1
+Claude_Code,implementation,Long method,6,29,200
+Claude_Code,implementation,Long parameter list,1,19,340
+Claude_Code,implementation,Long statement,119,686,5186
+Claude_Code,implementation,Magic number,175,528,1484
+Claude_Code,implementation,Missing default,0,1,4
+Copilot,design,Broken hierarchy,0,9,2279
+Copilot,design,Broken modularization,2,2,3597
+Copilot,design,Deep hierarchy,0,1,299
+Copilot,design,Deficient encapsulation,2,202,8409
+Copilot,design,Feature envy,2,32,2146
+Copilot,design,Insufficient modularization,0,12,787
+Copilot,design,Multifaceted abstraction,3,77,1583
+Copilot,design,Rebellious hierarchy,0,23,194
+Copilot,design,Wide hierarchy,8,11,403
+Copilot,implementation,Complex conditional,0,9,433
+Copilot,implementation,Complex method,12,136,5572
+Copilot,implementation,Empty catch block,0,67,2028
+Copilot,implementation,Long identifier,12,405,9265
+Copilot,implementation,Long lambda function,0,1,163
+Copilot,implementation,Long message chain,0,24,203
+Copilot,implementation,Long method,8,611,2149
+Copilot,implementation,Long parameter list,2,24,2438
+Copilot,implementation,Long statement,102,1164,55267
+Copilot,implementation,Magic number,50,1039,79287
+Cursor,design,Broken hierarchy,0,0,168
+Cursor,design,Broken modularization,1,11,85
+Cursor,design,Deficient encapsulation,4,31,782
+Cursor,design,Feature envy,2,61,347
+Cursor,design,Insufficient modularization,0,19,199
+Cursor,design,Multifaceted abstraction,5,51,377
+Cursor,design,Rebellious hierarchy,2,0,11
+Cursor,design,Wide hierarchy,0,0,13
+Cursor,implementation,Complex conditional,1,4,159
+Cursor,implementation,Complex method,17,87,1487
+Cursor,implementation,Empty catch block,11,61,595
+Cursor,implementation,Long identifier,20,282,2065
+Cursor,implementation,Long lambda function,0,2,18
+Cursor,implementation,Long message chain,2,5,162
+Cursor,implementation,Long method,13,69,937
+Cursor,implementation,Long parameter list,3,51,578
+Cursor,implementation,Long statement,123,1014,11418
+Cursor,implementation,Magic number,101,957,3571
+Cursor,implementation,Missing default,0,0,10
+Devin,design,Broken hierarchy,5,81,320
+Devin,design,Broken modularization,2,18,89
+Devin,design,Deficient encapsulation,90,425,4293
+Devin,design,Feature envy,1,87,669
+Devin,design,Insufficient modularization,3,26,930
+Devin,design,Multifaceted abstraction,18,304,1371
+Devin,design,Rebellious hierarchy,1,7,36
+Devin,design,Wide hierarchy,0,6,18
+Devin,implementation,Complex conditional,3,26,245
+Devin,implementation,Complex method,62,340,4839
+Devin,implementation,Empty catch block,9,145,1052
+Devin,implementation,Long identifier,79,1248,15144
+Devin,implementation,Long lambda function,0,11,54
+Devin,implementation,Long message chain,0,44,194
+Devin,implementation,Long method,21,123,1555
+Devin,implementation,Long parameter list,17,67,665
+Devin,implementation,Long statement,419,3290,53083
+Devin,implementation,Magic number,89,1263,14454
+Devin,implementation,Missing default,0,0,13
+Human,design,Broken hierarchy,197,0,0
+Human,design,Broken modularization,73,0,0
+Human,design,Deep hierarchy,1,0,0
+Human,design,Deficient encapsulation,1667,0,0
+Human,design,Feature envy,359,0,0
+Human,design,Insufficient modularization,236,0,0
+Human,design,Multifaceted abstraction,421,0,0
+Human,design,Rebellious hierarchy,25,0,0
+Human,design,Wide hierarchy,31,0,0
+Human,implementation,Complex conditional,147,0,0
+Human,implementation,Complex method,1588,0,0
+Human,implementation,Empty catch block,430,0,0
+Human,implementation,Long identifier,2923,0,0
+Human,implementation,Long lambda function,137,0,0
+Human,implementation,Long message chain,11,0,0
+Human,implementation,Long method,831,0,0
+Human,implementation,Long parameter list,537,0,0
+Human,implementation,Long statement,12745,0,0
+Human,implementation,Magic number,7471,0,0
+Human,implementation,Missing default,4,0,0
+OpenAI_Codex,design,Broken hierarchy,1,34,338
+OpenAI_Codex,design,Broken modularization,7,22,142
+OpenAI_Codex,design,Deficient encapsulation,26,343,3219
+OpenAI_Codex,design,Feature envy,17,160,881
+OpenAI_Codex,design,Insufficient modularization,5,20,405
+OpenAI_Codex,design,Multifaceted abstraction,23,290,1704
+OpenAI_Codex,design,Rebellious hierarchy,0,5,70
+OpenAI_Codex,design,Wide hierarchy,1,6,59
+OpenAI_Codex,implementation,Complex conditional,11,15,350
+OpenAI_Codex,implementation,Complex method,97,315,4497
+OpenAI_Codex,implementation,Empty catch block,61,203,2065
+OpenAI_Codex,implementation,Long identifier,43,936,4647
+OpenAI_Codex,implementation,Long lambda function,8,13,193
+OpenAI_Codex,implementation,Long message chain,6,22,87
+OpenAI_Codex,implementation,Long method,60,112,1563
+OpenAI_Codex,implementation,Long parameter list,34,65,1293
+OpenAI_Codex,implementation,Long statement,1002,2458,32434
+OpenAI_Codex,implementation,Magic number,665,2054,18171
+OpenAI_Codex,implementation,Missing default,2,0,14
